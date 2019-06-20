@@ -1,0 +1,323 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	font-family: 'Sniglet', cursive;
+}
+
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+
+ p {
+	text-align: justify;
+}
+
+img , button {
+	cursor: pointer;
+}
+
+main {
+	padding: 5vh 3vw;
+}
+
+/* header & slider */
+header {
+	background-image: url("../images/background_slide.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 0 5vw;
+
+}
+
+header > nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header > nav > ul {
+	display: flex;
+}
+
+header > nav > ul a {
+	color: white ;
+	margin-left: 5vw;
+	font-size: 1.4rem;
+	text-transform: uppercase;
+}
+
+header > nav .logo {
+	background-color: white;
+	border-bottom-right-radius: 50%;
+	border-bottom-left-radius: 50%;
+}
+
+header > nav img  {
+	padding: 3vh 1vw ;
+}
+/* slider style */
+
+header .slider {
+	padding:20vh 0 20vh 0px;
+}
+
+header .slider > div {
+	color: white;
+	width: 40vw;
+	font-size: 4rem;
+	text-transform: uppercase;
+	justify-content: center;
+	border-bottom: 2px solid white;
+}
+header .slider > div span  {
+	color: #ef2a31;
+}
+
+header .slider > p {
+	color: white;
+	font-size: 1.6rem;
+	margin-top: 2vh;	
+}
+
+/* hover & focus header */
+header > nav > ul a:hover {
+	color: #ef2a31 ;
+	padding-bottom: 1vh;
+	border-bottom: 1px solid #ef2a31;
+	transition: 0.4s
+}
+header > nav > ul a:focus {
+	color: #ef2a31 ;
+}
+
+/* footer style */
+
+footer {
+	background-color: #231012;
+	padding: 4vh 8vw;
+	color: white;
+	font-family: 'Arimo', sans-serif;
+
+}
+
+footer > div {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 5vh;
+}
+
+footer > div > table {
+	width: 20vw;
+}
+
+footer table  th {
+	font-size: 1.5rem;
+	padding-bottom: 5%;
+	text-align: left;
+}
+
+footer tbody {
+	color: #c9c9c9;
+}
+
+footer tbody td {
+	display: flex;
+	justify-content: space-between;
+}
+footer tbody td img {
+	height: 4%
+}
+
+footer tbody td input {
+	padding: 0.5rem 0.9rem;
+	border-radius: 2rem;
+	border: none;
+	margin-bottom: 4%;
+}
+
+footer tbody td button {
+	padding: 0.3rem 2rem;
+	border-radius: 2rem;
+	border: none;
+	background-color: #ee1b22;
+	color: white;
+	font-size: 1.1rem;
+}
+
+footer > p {
+	text-align: center;
+}
+/* main style */
+
+main > h1 {
+	color: #ef2a31;
+	text-transform: capitalize;
+	font-size: 4rem;
+	font-weight: lighter;
+	text-align: center;
+	margin-bottom: 4vh;
+}
+
+.what_we_offer nav > ul {
+	display: flex;
+	margin-bottom: 5vh ;
+	margin-left: 3%;
+}
+
+.what_we_offer nav > ul a {
+	color: #000;
+	background-color: white;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1.1rem;
+	font-family: 'Arimo', sans-serif;
+	margin-right: 3vw;
+	padding: 5% 10% ;
+	border-radius: 2rem;
+}
+.what_we_offer > div {
+	display: none;
+	justify-content: space-between;
+	margin-bottom: 5vh;
+}
+
+.what_we_offer > div >  div {
+	width: 20vw;
+	padding: 3%;
+	text-align: center;
+	background-color: white;
+	border: 1px solid #cfcfcf;
+	border-radius: 10%;
+	box-shadow: 0.2rem 0.2rem 0.2rem #888888;
+}
+.what_we_offer > div > div img {
+	width: 20vw
+}
+
+.name_prix {
+	color: #ef2a31;
+	font-weight: bold;
+	font-size: 1.2rem;
+	display: flex;
+	justify-content: space-between;
+	padding: 1vh 0;
+}
+
+
+/* hover & focus */
+
+.what_we_offer nav > ul a:hover  {
+	background-color: #ef2a31;
+	padding: 5% 10% ;
+	border-radius: 2rem;
+	color: white;
+}
+.what_we_offer > div > div:hover {
+	transform: scale(1.1);
+	background-color: #e9e9e9;
+}
+
+/* delivery page style */
+
+.delivery #delivery_list {
+	border: solid #231012 0.2rem; 
+	padding: 1%;
+	display: flex;
+}
+
+.delivery h2 {
+	color: #231012;
+	font-size: 3rem;
+	text-transform: uppercase;
+	text-align: center;
+	font-family: 'Arimo', sans-serif;
+}
+
+.delivery .button_produit {
+	display: flex;
+  flex-wrap: wrap;
+  align-items:center;
+  margin: 8% 0;
+
+}
+
+.delivery .element_delivery_buttom {
+	display: flex;
+	padding: 1% 0 ;
+	align-items: center;
+}
+
+.delivery .element_delivery_buttom > img {
+	width: 45%;
+}
+
+.delivery .name_prix {
+	font-size: 0.9rem;
+}
+
+.delivery .element_delivery_left {
+	margin: 0 1%;
+	padding-right: 2%;
+	
+}
+
+.delivery  .button_produit > img {
+		width: 13%;
+		height: 3%;
+
+}
+
+.delivery .button_produit > button {
+		background-color: #231012;
+		color: white;
+		border: none;
+		text-align: center;
+		padding: 3% 17% ;
+		border-radius: 2rem;
+}
+
+.delivery .bottom_delivery {
+	padding: 0.5rem 2rem;
+	text-align: center;
+}
+
+.delivery .bottom_delivery input {
+	padding: 0.4rem 0.9rem ;
+	width: 20%;
+	border: 0.2rem solid #231012;
+	border-radius: 2rem;
+	margin: 0 6%
+}
+
+.delivery .bottom_delivery input::placeholder {
+  color: #231012;
+  font-size: 1.2rem;
+}
+
+.delivery .bottom_delivery button {
+		padding: 0.4rem 2rem ;
+		background-color: #ef2a31;
+		color: white;
+		border: none;
+		border-radius: 2rem;
+		font-size: 1.4rem;
+}
+
+.delivery > table {
+	width: 40%;
+	font-size: 1.3rem;
+	background-color: #ebebeb;
+	padding: 0.5rem;
+	display: none;
+	border: 0.2rem solid red
+}
+.delivery > table td {
+	padding-right: 2rem;
+
+}

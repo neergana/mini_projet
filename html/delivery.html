@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Delivery</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Sniglet&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Arimo&display=swap" rel="stylesheet"> 
+</head>
+<body>
+	<script src="../js/buttons.js"> </script>
+<!-- header contient header et slider -->
+<header>
+	<nav>
+		<div class="logo"><img src="../images/logofood.png" alt="logofood" title="fast food"></div>
+		<ul>
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="#">Delivery</a></li>
+			<li><a href="#">Location</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</nav>
+	<div class="slider">
+		<div><p>“ THE <br> <span>Flavor</span> <br> of now ”</p></div>
+		<p>with us</p>
+	</div>
+</header>
+
+			<!--  main delivery contianer  --> 
+
+<main>
+	<h1>Your Request for delivery </h1>
+	<section class="delivery">
+		<div id="delivery_list">
+			<div class="element_delivery">
+				<h2>pizza</h2>
+				<div class="element_delivery_buttom">
+					<img src="../images/pizza3.jpg" alt="pizza" title="chicken pizza">
+					<div class="element_delivery_left">
+						<div class="name_prix">
+							<p>chicken pizza</p>
+							<p>9 $</p>
+						</div>
+						<div class="button_produit">
+								<img onclick="remove1()" src="../images/fleche1.png" alt="fleche" title="remove">
+								<button id="button1">0</button>
+								<img onclick="add1()" src="../images/fleche2.png" alt="fleche" title="add">
+						</div>
+					</div>
+				</div>
+
+				<div class="element_delivery_buttom">
+					<img src="../images/pizza1.jpg" alt="pizza" title="pizza royale">
+					<div class="element_delivery_left">
+						<div class="name_prix">
+							<p>pizza royale</p>
+							<p>8.5 $</p>
+						</div>
+						<div class="button_produit">
+								<img onclick="remove2()" src="../images/fleche1.png" alt="fleche" title="remove">
+								<button id="button2">0</button>
+								<img onclick="add2()" src="../images/fleche2.png" alt="fleche" title="add">
+						</div>
+					</div>
+				</div>
+
+				<div class="element_delivery_buttom">
+					<img src="../images/pizza2.jpg" alt="pizza" title="margherita pizza">
+					<div class="element_delivery_left">
+						<div class="name_prix">
+							<p>margherita pizza</p>
+							<p>8 $</p>
+						</div>
+						<div class="button_produit">
+								<img onclick="remove3()" src="../images/fleche1.png" alt="fleche" title="remove">
+								<button id="button3">0</button>
+								<img onclick="add3()" src="../images/fleche2.png" alt="fleche" title="add">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="element_delivery">
+				<h2>hamburger</h2>
+				<div class="element_delivery_buttom">
+					<img src="../images/hamburger1.jpg" alt="hamburger" title="G'S hamburger">
+					<div class="element_delivery_left">
+						<div class="name_prix">
+							<p>G'S hamburger</p>
+							<p>3.5 $</p>
+						</div>
+						<div class="button_produit">
+								<img onclick="remove4()" src="../images/fleche1.png" alt="fleche" title="remove">
+								<button id="button4">0</button>
+								<img onclick="add4()" src="../images/fleche2.png" alt="fleche" title="add">
+						</div>
+					</div>
+				</div>
+
+				<div class="element_delivery_buttom">
+					<img src="../images/hamburger2.jpg" alt="hamburger" title="bacon hamburger">
+					<div class="element_delivery_left">
+						<div class="name_prix">
+							<p>bacon hamburger</p>
+							<p>4 $</p>
+						</div>
+						<div class="button_produit">
+								<img onclick="remove5()" src="../images/fleche1.png" alt="fleche" title="remove">
+								<button id="button5">0</button>
+								<img onclick="add5()" src="../images/fleche2.png" alt="fleche" title="add">
+						</div>
+					</div>
+				</div>
+
+				<div class="element_delivery_buttom">
+					<img src="../images/hamburger3.jpg" alt="hamburger" title="hangover hamburger">
+					<div class="element_delivery_left">
+						<div class="name_prix">
+							<p>hangover hamburger</p>
+							<p>5 $</p>
+						</div>
+						<div class="button_produit">
+								<img onclick="remove6()" src="../images/fleche1.png" alt="fleche" title="remove">
+								<button id="button6">0</button>
+								<img onclick="add6()" src="../images/fleche2.png" alt="fleche" title="add">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="element_delivery">
+				<h2>tacus</h2>
+				<div class="element_delivery_buttom">
+					<img src="../images/tacus1.jpg" alt="tacus" title="simple tacus">
+					<div class="element_delivery_left">
+						<div class="name_prix">
+							<p>simple tacus</p>
+							<p>5 $</p>
+						</div>
+						<div class="button_produit">
+								<img onclick="remove7()" src="../images/fleche1.png" alt="fleche" title="remove">
+								<button id="button7">0</button>
+								<img onclick="add7()" src="../images/fleche2.png" alt="fleche" title="add">
+						</div>
+					</div>
+				</div>
+
+				<div class="element_delivery_buttom">
+					<img src="../images/tacus2.jpg" alt="tacus" title="double tacus">
+					<div class="element_delivery_left">
+						<div class="name_prix">
+							<p>double tacus</p>
+							<p>6.5 $</p>
+						</div>
+						<div class="button_produit">
+								<img onclick="remove8()" src="../images/fleche1.png" alt="fleche" title="remove">
+								<button id="button8">0</button>
+								<img onclick="add8()" src="../images/fleche2.png" alt="fleche" title="add">
+						</div>
+					</div>
+				</div>
+
+				<div class="element_delivery_buttom">
+					<img src="../images/tacus3.jpg" alt="tacus" title="giga tacus">
+					<div class="element_delivery_left">
+						<div class="name_prix">
+							<p>giga tacus</p>
+							<p>8 $</p>
+						</div>
+						<div class="button_produit">
+								<img onclick="remove9()" src="../images/fleche1.png" alt="fleche" title="remove">
+								<button id="button9">0</button>
+								<img onclick="add9()" src="../images/fleche2.png" alt="fleche" title="add">
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="bottom_delivery" >
+			<input id="name" type="text" name="nom" value="" placeholder="Your name..."> 
+			<input id="adresse" type="text" adresse="nom" value="" placeholder="Your adresse..."> 
+			<div><button onclick="affichage()">send</button></div>
+		</div>
+
+		<table id="tableinfo">
+			<thead>
+				<tr>
+					<th colspan="2">Request Information</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Name  </td>
+					<td id="tablename"></td>
+				</tr>
+				<tr>
+					<td>Adresse</td>
+					<td id="tableadresse"></td>
+				</tr>
+				<tr>
+					<td>Your requests</td>
+					<td id="tablerequest"></td>
+				</tr>
+				<tr>
+					<td>Price </td>
+					<td id="tableprix"></td>
+				</tr>
+			</tbody>
+		</table>		
+	</section>
+</main>
+
+			<!-- utilise table en footer  --> 
+<footer>
+	<div>
+		<table class="keep_connected">
+			<thead>
+				<tr>
+				<th>Keep connected</th>
+			</tr>
+			</thead>
+
+			<tbody>
+				<tr>
+					<td>
+						<img src="../images/icon_media1.png" title="follow us on facebook" alt="icon_media">
+						<img src="../images/icon_media2.png" title="follow us on pinterest" alt="icon_media">
+						<img src="../images/icon_media3.png" title="follow us on instagram" alt="icon_media">
+						<img src="../images/icon_media4.png" title="follow us on twitter" alt="icon_media">
+						<img src="../images/icon_media5.png" title="add us on google plus" alt="icon_media">
+					</td>
+				</tr>
+				
+				</tbody>
+		</table>
+
+		<table class="join_us">
+			<thead>
+				<tr>
+					<th>join us</th>
+				</tr>
+			</thead>
+
+			<tbody>
+				<tr>
+					<td>
+						<input type="email" name="email" placeholder="Your e_mail...">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<button>send</button>
+					</td>
+				</tr>
+				</tbody>
+		</table>
+
+		<table class="more">
+			<thead>
+				<tr>
+				<th>More about us</th>
+			</tr>
+			</thead>
+
+			<tbody>
+				<tr>
+					<td>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+						</p>
+					</td>
+				</tr>
+				
+				</tbody>
+		</table>
+	</div>
+	<p>designed by RGANA Abderrahim & DEDDOUCH Ayoub </p>
+</footer>
+
+</body>
+</html>
