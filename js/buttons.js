@@ -214,7 +214,7 @@ var price = [9,8.5,8,3.5,4,5,5,6.5,8]
 				tablename.innerHTML = name.value
 				tableadresse.innerHTML = adresse.value
 				tablerequest.innerHTML = commande
-				tableprix.innerHTML = prix_finale
+				tableprix.innerHTML = prix_finale + " $"
 				}
 
 // initialiser les elements de base 

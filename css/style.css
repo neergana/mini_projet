@@ -321,3 +321,7 @@ main > h1 {
 	padding-right: 2rem;
 
 }
+.delivery > table #tableprix {
+	color: red;
+	font-weight: bold;
+}
