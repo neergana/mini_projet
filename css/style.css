@@ -181,10 +181,19 @@ main > h1 {
 	padding: 5% 10% ;
 	border-radius: 2rem;
 }
+
+.what_we_offer nav > ul #pizza{
+	color: white;
+	background-color: #ef2a31;
+}
 .what_we_offer > div {
 	display: none;
 	justify-content: space-between;
 	margin-bottom: 5vh;
+}
+
+.what_we_offer #pizza_liste {
+	display: flex;
 }
 
 .what_we_offer > div >  div {
