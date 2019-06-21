@@ -65,6 +65,14 @@ function changetotacus () {
 	hamburger_liste.style.display = "none"
 }
 
-//var pizza = document.querySelector("#pizza")
-//pizza.addEventListener("click",changetopizza)
+//trsponsive button top
 
+
+
+function responsive() {
+	var respo = document.getElementById("mobile-respo")
+	var butt_mobile = document.getElementById("menu_button")
+	respo.style.display = "flex"
+	respo.style.flexDirection = "column"
+	butt_mobile.style.display = "none"
+}

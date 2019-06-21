@@ -5,6 +5,7 @@
 
 body {
 	font-family: 'Sniglet', cursive;
+
 }
 
 ul {
@@ -28,7 +29,7 @@ main {
 
 /* header & slider */
 header {
-	background-image: url("../images/background_slide.jpg");
+	background-image: url("../images/background_slider.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	padding: 0 5vw;
@@ -38,7 +39,7 @@ header {
 header > nav {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-start;
 }
 
 header > nav > ul {
@@ -48,18 +49,13 @@ header > nav > ul {
 header > nav > ul a {
 	color: white ;
 	margin-left: 5vw;
-	font-size: 1.4rem;
+	font-size: 2vw;
 	text-transform: uppercase;
 }
 
-header > nav .logo {
-	background-color: white;
-	border-bottom-right-radius: 50%;
-	border-bottom-left-radius: 50%;
-}
-
 header > nav img  {
-	padding: 3vh 1vw ;
+	width: 60% ;
+	padding-top: 20%
 }
 /* slider style */
 
@@ -70,7 +66,7 @@ header .slider {
 header .slider > div {
 	color: white;
 	width: 40vw;
-	font-size: 4rem;
+	font-size: 7vw;
 	text-transform: uppercase;
 	justify-content: center;
 	border-bottom: 2px solid white;
@@ -81,7 +77,7 @@ header .slider > div span  {
 
 header .slider > p {
 	color: white;
-	font-size: 1.6rem;
+	font-size: 5vw;
 	margin-top: 2vh;	
 }
 
@@ -94,6 +90,16 @@ header > nav > ul a:hover {
 }
 header > nav > ul a:focus {
 	color: #ef2a31 ;
+}
+
+header  .mobile-respo > img {
+	display: none;
+	width: 8%;
+	position: absolute;
+	right: 2%;
+	top: 2%;
+	cursor: pointer;
+
 }
 
 /* footer style */
@@ -125,7 +131,6 @@ footer table  th {
 footer tbody {
 	color: #c9c9c9;
 }
-
 footer tbody td {
 	display: flex;
 	justify-content: space-between;
@@ -152,17 +157,29 @@ footer tbody td button {
 
 footer > p {
 	text-align: center;
+	font-size: 2vw;
 }
+
+/* Responsive*/
+/*@media screen and (max-width: 80px) {
+	header {background-repeat: repeat;}
+	.what_we_offer nav > ul {display: none;}
+
+}*/
+
+
 /* main style */
 
 main > h1 {
 	color: #ef2a31;
 	text-transform: capitalize;
-	font-size: 4rem;
+	font-size: 7vw;
 	font-weight: lighter;
 	text-align: center;
 	margin-bottom: 4vh;
 }
+
+
 
 .what_we_offer nav > ul {
 	display: flex;
@@ -175,7 +192,7 @@ main > h1 {
 	background-color: white;
 	text-transform: uppercase;
 	font-weight: bold;
-	font-size: 1.1rem;
+	font-size: 3vw;
 	font-family: 'Arimo', sans-serif;
 	margin-right: 3vw;
 	padding: 5% 10% ;
@@ -242,7 +259,7 @@ main > h1 {
 
 .delivery h2 {
 	color: #231012;
-	font-size: 3rem;
+	font-size: 5vw;
 	text-transform: uppercase;
 	text-align: center;
 	font-family: 'Arimo', sans-serif;
@@ -263,7 +280,7 @@ main > h1 {
 }
 
 .delivery .element_delivery_buttom > img {
-	width: 45%;
+	width: 30%;
 }
 
 .delivery .name_prix {
@@ -297,16 +314,16 @@ main > h1 {
 }
 
 .delivery .bottom_delivery input {
-	padding: 0.4rem 0.9rem ;
-	width: 20%;
+	padding: 2vh 5vw ;
+	width: 30%;
 	border: 0.2rem solid #231012;
 	border-radius: 2rem;
-	margin: 0 6%
+	margin: 1% 2%
 }
 
 .delivery .bottom_delivery input::placeholder {
   color: #231012;
-  font-size: 1.2rem;
+  font-size: 2vw;
 }
 
 .delivery .bottom_delivery button {
@@ -333,4 +350,82 @@ main > h1 {
 .delivery > table #tableprix {
 	color: red;
 	font-weight: bold;
+}
+
+
+
+
+@media (max-width: 800px) {
+
+html {
+	width: 100%
+}
+header > nav > ul {
+	display: none;
+	margin-top: 3% ;
+	
+}
+header > nav > ul a {
+	font-size: 4vw;
+	margin-bottom: 3%
+}
+header  .mobile-respo > img {
+	display: block;}
+body {
+	width: 100vw;
+	padding: 0px;
+	margin: 0px;
+}
+header {
+	background-size: cover;
+
+}
+
+main , footer , header ,  {
+	width: 100vw
+}
+
+footer > div {
+	flex-direction: column;}
+
+
+
+footer > div > table {
+	    width: 100%;
+}
+
+footer th {
+	font-size: 1vw;
+}
+
+.what_we_offer > div >  div {
+	width: 85%;
+	margin-bottom: 5%
+}
+.what_we_offer > div > div img {
+	width: 100%
+}
+
+
+.delivery #delivery_list {
+    flex-direction: column;
+    width: 95%;
+    text-align: center;
+}
+
+.what_we_offer > div {
+	display: none;
+	flex-direction: column;
+}
+
+input {
+	width: 100%;
+}
+input:placeholder {
+
+}
+button {
+	width: 25%;
+	text-align: center;
+}
 }

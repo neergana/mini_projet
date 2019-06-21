@@ -216,14 +216,14 @@ var price = [9,8.5,8,3.5,4,5,5,6.5,8]
 				tablerequest.innerHTML = commande
 				tableprix.innerHTML = prix_finale + " $"
 				}
+			}
 
-// initialiser les elements de base 
-			
+// responsive
+			function responsives() {
+				var respo = document.getElementById("mobile-respo")
+				var butt_mobile = document.getElementById("menu_button")
+				respo.style.display = "flex"
+				respo.style.flexDirection = "column"
+				butt_mobile.style.display = "none"
+			}
 		
-
-		
-
-
-	
-
-}

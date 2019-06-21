@@ -3,6 +3,7 @@
 <head>
 	<title>Home</title>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Sniglet&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Arimo&display=swap" rel="stylesheet"> 
@@ -13,7 +14,7 @@
 <header>
 	<nav>
 		<div class="logo"><img src="./images/logofood.png" alt="logofood" title="fast food"></div>
-		<ul>
+		<ul id="mobile-respo">
 			<li><a href="#">Home</a></li>
 			<li><a href="./html/Delivery.html">Delivery</a></li>
 			<li><a href="#">Location</a></li>
@@ -23,6 +24,9 @@
 	<div class="slider">
 		<div><p>“ THE <br> <span>Flavor</span> <br> of now ”</p></div>
 		<p>with us</p>
+	</div>
+	<div onclick="responsive()" class="mobile-respo">
+		<img id="menu_button" src="./images/menu_mobile.png">
 	</div>
 </header>
 
