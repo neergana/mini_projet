@@ -366,7 +366,7 @@ header > nav > ul {
 	
 }
 header > nav > ul a {
-	font-size: 4vw;
+	font-size: 7vw;
 	margin-bottom: 3%
 }
 header  .mobile-respo > img {
@@ -425,7 +425,11 @@ input:placeholder {
 
 }
 button {
-	width: 25%;
-	text-align: center;
+	width: 50%;
+
+}
+
+.element_delivery_buttom > img {
+    width: 50%;
 }
 }
