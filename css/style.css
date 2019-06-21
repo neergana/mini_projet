@@ -44,6 +44,7 @@ header > nav {
 
 header > nav > ul {
 	display: flex;
+	padding-top: 3vh
 }
 
 header > nav > ul a {
@@ -314,7 +315,8 @@ main > h1 {
 }
 
 .delivery .bottom_delivery input {
-	padding: 2vh 5vw ;
+	padding: 1.2vh 1.2vw ;
+	padding-top: 2vh;
 	width: 30%;
 	border: 0.2rem solid #231012;
 	border-radius: 2rem;
@@ -323,7 +325,7 @@ main > h1 {
 
 .delivery .bottom_delivery input::placeholder {
   color: #231012;
-  font-size: 2vw;
+  font-size: 3.5vw;
 }
 
 .delivery .bottom_delivery button {
@@ -352,9 +354,52 @@ main > h1 {
 	font-weight: bold;
 }
 
+/* location page */
+.find_us {
+	
+}
 
+.find_us > .car , .find_us > .bus  {
+	border-radius: 2rem;
+	background-color: #ee1b23;
+	padding: 1%;
+	display: flex;
+	align-items: center;
+	width: 98%;
+	text-align: center;
+	margin-bottom: 2%;
+	
+}
 
+.find_us > div > div {
+	width: 48% 
+}
 
+.find_us > div > div img {
+	width: 90%;
+}
+
+.find_us > div .backend {
+	background-color: white;
+	border-bottom-left-radius: 2rem;
+	border-top-left-radius: 2rem;
+	padding: 1%;
+	}
+
+	.find_us  h2 {
+		text-align: center;
+		color: #d73b2e;
+		padding-bottom: 2%;
+		font-size: 3vw;
+	}
+
+	.find_us iframe {
+		border: 0.4vw #d73b2e solid;
+		margin-left: 25%;
+		width: 50%;
+		height: 40vh;
+	}
+/* media query responsive */
 @media (max-width: 800px) {
 
 html {
@@ -366,8 +411,7 @@ header > nav > ul {
 	
 }
 header > nav > ul a {
-	font-size: 7vw;
-	margin-bottom: 15%
+	font-size: 8vw;
 }
 header  .mobile-respo > img {
 	display: block;}
@@ -419,6 +463,7 @@ footer th {
 	flex-direction: column;
 }
 
+
 input {
 	width: 100%;
 }
@@ -431,6 +476,22 @@ button {
 }
 
 .element_delivery_buttom > img {
-    width: 100%;
+    width: auto;
 }
+
+.delivery > table {
+	width:  80%
+}
+.find_us > div {
+	flex-direction: column;
+}
+.find_us > div > div {
+	width: 97% 
+}
+.find_us > div .backend {
+	border-radius: 0;
+	border-top-right-radius: 2rem;
+	border-top-left-radius: 2rem;
+	margin-bottom: 1%;
+
 }
