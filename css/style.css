@@ -558,6 +558,9 @@ button {
 	flex-direction: column;
 }
 
+.contact_us h2 {
+	font-size: 4vw;
+}
 .contact_us > div:first-child , .contact_us > div:last-child {
 	width: 90% ;
 
