@@ -29,7 +29,7 @@ main {
 
 /* header & slider */
 header {
-	background-image: url("../images/background_slider.jpg");
+	background-image: linear-gradient(to bottom, rgba(0,0,0,0.08), rgba(0,0,0,0.01)) , url("../images/background_slider.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	padding: 0 5vw;
@@ -50,10 +50,14 @@ header > nav > ul {
 header > nav > ul a {
 	color: white ;
 	margin-left: 5vw;
+	margin-bottom: 5vh;
 	font-size: 2vw;
 	text-transform: uppercase;
 }
 
+.active_element {
+	color: red
+}
 header > nav img  {
 	width: 60% ;
 	padding-top: 20%
@@ -174,7 +178,7 @@ footer > p {
 main > h1 {
 	color: #ef2a31;
 	text-transform: capitalize;
-	font-size: 7vw;
+	font-size: 5vw;
 	font-weight: lighter;
 	text-align: center;
 	margin-bottom: 4vh;
@@ -260,7 +264,7 @@ main > h1 {
 
 .delivery h2 {
 	color: #231012;
-	font-size: 5vw;
+	font-size: 3vw;
 	text-transform: uppercase;
 	text-align: center;
 	font-family: 'Arimo', sans-serif;
@@ -315,7 +319,7 @@ main > h1 {
 }
 
 .delivery .bottom_delivery input {
-	padding: 1.2vh 1.2vw ;
+	padding: 1.2vw ;
 	padding-top: 2vh;
 	width: 30%;
 	border: 0.2rem solid #231012;
@@ -325,7 +329,6 @@ main > h1 {
 
 .delivery .bottom_delivery input::placeholder {
   color: #231012;
-  font-size: 3.5vw;
 }
 
 .delivery .bottom_delivery button {
@@ -355,19 +358,16 @@ main > h1 {
 }
 
 /* location page */
-.find_us {
-	
-}
-
 .find_us > .car , .find_us > .bus  {
 	border-radius: 2rem;
 	background-color: #ee1b23;
 	padding: 1%;
 	display: flex;
 	align-items: center;
-	width: 98%;
+	width: 70%;
 	text-align: center;
-	margin-bottom: 2%;
+	margin-left: 13%;
+	margin-bottom: 4%;
 	
 }
 
@@ -399,6 +399,66 @@ main > h1 {
 		width: 50%;
 		height: 40vh;
 	}
+	/* contact  page */
+
+	.contact_us {
+		display: flex;
+		margin-left: 7%;
+
+	}
+
+	.contact_us h2 {
+		color: white;
+		margin-bottom: 3vh;
+		font-size: 2vw;
+	}
+	.contact_us > div:first-child {
+		background-color: #d73b2f;
+		display: flex;
+		flex-direction: column;
+		width: 50%;
+		padding: 2%;
+		text-align: center;
+	}
+
+	.contact_us input , .contact_us  button , .contact_us  textarea {
+		border: none;
+		background-color: white;
+		margin: 2% 0;
+		padding: 2% 4% ;
+	}
+	.contact_us  button a {
+		color: #d73b2f;
+		font-weight: bold;
+		font-size: 2vw;
+	}
+.contact_us  textarea {
+	height: 20vh;
+	resize: none;
+}
+.contact_us > div:last-child {
+		background-color: #c5c5c5;
+		display: flex;
+		flex-direction: column;
+		width: 30%;
+		padding: 2%;
+		text-align: center;
+	}
+.contact_us > div:last-child > div {
+	display: flex;
+	width: 80%;
+	margin-bottom: 10%;
+	margin-right: 5%;
+	text-align: left;
+}
+
+.contact_us > div:last-child div img {
+	width: 50%;
+	
+	
+}
+
+
 /* media query responsive */
 @media (max-width: 800px) {
 
@@ -467,9 +527,7 @@ footer th {
 input {
 	width: 100%;
 }
-input:placeholder {
 
-}
 button {
 	width: 50%;
 
@@ -494,4 +552,27 @@ button {
 	border-top-left-radius: 2rem;
 	margin-bottom: 1%;
 
+}
+
+.contact_us { 
+	flex-direction: column;
+}
+
+.contact_us > div:first-child , .contact_us > div:last-child {
+	width: 90% ;
+
+}
+.contact_us input , .contact_us  button , .contact_us  textarea {
+	width: 70% ;
+	padding-right: 0;
+	margin-left: 13%
+}
+.contact_us  button {
+	width: 73.3% ;}
+
+.contact_us > div:last-child > div {
+	margin-left: 13%;
+	font-size: 2.5vw;
+	align-items: center;
+}
 }

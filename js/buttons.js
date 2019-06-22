@@ -218,6 +218,106 @@ var price = [9,8.5,8,3.5,4,5,5,6.5,8]
 				}
 			}
 
+			//change TO "index page"
+
+var list_here = document.getElementById('liste_here')
+
+function changetopizza () {
+	// style button on click
+	var button_pizza = document.getElementById('pizza')
+	button_pizza.style.backgroundColor = "#ef2a31";
+	button_pizza.style.color = "white";
+  // conditiondefauts style pour les autres
+	var hamburger_button = document.getElementById('hamburger')
+	var tacus_button = document.getElementById('tacus')
+	hamburger_button.style.backgroundColor = "white";
+	hamburger_button.style.color = "#000";
+	tacus_button.style.backgroundColor = "white";
+	tacus_button.style.color = "#000";
+
+
+
+	// style liste apres button
+	var pizza_list = document.getElementById('pizza_liste')
+	pizza_liste.style.display = "flex"
+	hamburger_liste.style.display = "none"
+	tacus_liste.style.display = "none"
+
+
+}
+
+function changetohamburger () {
+	// style button on click
+	var hamburger_button = document.getElementById('hamburger')
+	hamburger_button.style.backgroundColor = "#ef2a31";
+	hamburger_button.style.color = "white";
+  // conditiondefauts style pour les autres
+	var button_pizza = document.getElementById('pizza')
+	var tacus_button = document.getElementById('tacus')
+	button_pizza.style.backgroundColor = "white";
+	button_pizza.style.color = "#000";
+	tacus_button.style.backgroundColor = "white";
+	tacus_button.style.color = "#000";
+
+	// style liste apres button
+	var hamburger_liste = document.getElementById('hamburger_liste')
+	hamburger_liste.style.display = "flex"
+	pizza_liste.style.display = "none"
+	tacus_liste.style.display = "none"
+}
+
+function changetotacus () {
+	// style button on click
+	var tacus_button = document.getElementById('tacus')
+	tacus_button.style.backgroundColor = "#ef2a31";
+	tacus_button.style.color = "white";
+  // conditiondefauts style pour les autres
+	var button_pizza = document.getElementById('pizza')
+	var hamburger_button = document.getElementById('hamburger')
+	hamburger_button.style.backgroundColor = "white";
+	hamburger_button.style.color = "#000";
+	button_pizza.style.backgroundColor = "white";
+	button_pizza.style.color = "#000";
+
+	// style liste apres button
+	var tacus_liste = document.getElementById('tacus_liste')
+	tacus_liste.style.display = "flex"
+	pizza_liste.style.display = "none"
+	hamburger_liste.style.display = "none"
+}
+
+// colorer le focus 
+function colorhome() {
+				//document.getElementById('home').style.color = 'red'
+				//document.getElementById('delivery').style.color = 'white'
+				//document.getElementById('location').style.color = 'white'
+				//document.getElementById('contact').style.color = 'white'
+				var element = document.getElementById("home");
+  				 element.classList.add("haag");
+			}
+
+function colordelivery() {
+				document.getElementById('home').style.color = 'red'
+				document.getElementById('delivery').style.color = 'white'
+				document.getElementById('location').style.color = 'white'
+				document.getElementById('contact').style.color = 'white'
+			}
+
+function colorlocation() {
+				document.getElementById('home').style.color = 'red'
+				document.getElementById('delivery').style.color = 'white'
+				document.getElementById('location').style.color = 'white'
+				document.getElementById('contact').style.color = 'white'
+			}
+
+function colorcontact() {
+				document.getElementById('home').style.color = 'red'
+				document.getElementById('delivery').style.color = 'white'
+				document.getElementById('location').style.color = 'white'
+				document.getElementById('contact').style.color = 'white'
+			}
+
+
 // responsive
 			function responsives() {
 				var respo = document.getElementById("mobile-respo")

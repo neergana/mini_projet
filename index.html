@@ -9,23 +9,23 @@
 	<link href="https://fonts.googleapis.com/css?family=Arimo&display=swap" rel="stylesheet"> 
 </head>
 <body>
-	<script src="./js/function.js"> </script>
+	<script src="./js/buttons.js"> </script>
 <!-- header contient header et slider -->
 <header>
 	<nav>
 		<div class="logo"><img src="./images/logofood.png" alt="logofood" title="fast food"></div>
 		<ul id="mobile-respo">
-			<li><a href="#">Home</a></li>
-			<li><a href="./html/Delivery.html">Delivery</a></li>
-			<li><a href="#">Location</a></li>
-			<li><a href="#">Contact</a></li>
+			<li><a id="home" href="#" onclick="colorhome()">Home</a></li>
+			<li><a id="delivery" href="./html/Delivery.html">Delivery</a></li>
+			<li><a id="location" href="./html/location.html">Location</a></li>
+			<li><a id="contact" href="./html/contact.html">Contact</a></li>
 		</ul>
 	</nav>
 	<div class="slider">
 		<div><p>“ THE <br> <span>Flavor</span> <br> of now ”</p></div>
 		<p>with us</p>
 	</div>
-	<div onclick="responsive()" class="mobile-respo">
+	<div onclick="responsives()" class="mobile-respo">
 		<img id="menu_button" src="./images/menu_mobile.png" alt="menu_mobile">
 	</div>
 </header>
