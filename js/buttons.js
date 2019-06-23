@@ -1,4 +1,6 @@
 
+// buttons fonctions pour les buttons du nombre du produit 
+
 function add1() {
 		var button1 = document.getElementById("button1");
 	if (parseInt(button1.innerHTML) < 10) {
@@ -150,7 +152,7 @@ function remove9() {
 		var name = document.getElementById("name");
 		var adresse = document.getElementById("adresse");
 
-// condition  pour aucun piza selectionner
+// condition  pour aucun element selectionner
 
 var buttons = [button1,button2,button3,button4,button5,button6,button7,button8,button9];
 var keyss = []
@@ -218,7 +220,7 @@ var price = [9,8.5,8,3.5,4,5,5,6.5,8]
 				}
 			}
 
-			//change TO "index page"
+			//fonstions d affichages les inputs 
 
 var list_here = document.getElementById('liste_here')
 
@@ -286,39 +288,7 @@ function changetotacus () {
 	hamburger_liste.style.display = "none"
 }
 
-// colorer le focus 
-function colorhome() {
-				//document.getElementById('home').style.color = 'red'
-				//document.getElementById('delivery').style.color = 'white'
-				//document.getElementById('location').style.color = 'white'
-				//document.getElementById('contact').style.color = 'white'
-				var element = document.getElementById("home");
-  				 element.classList.add("haag");
-			}
-
-function colordelivery() {
-				document.getElementById('home').style.color = 'red'
-				document.getElementById('delivery').style.color = 'white'
-				document.getElementById('location').style.color = 'white'
-				document.getElementById('contact').style.color = 'white'
-			}
-
-function colorlocation() {
-				document.getElementById('home').style.color = 'red'
-				document.getElementById('delivery').style.color = 'white'
-				document.getElementById('location').style.color = 'white'
-				document.getElementById('contact').style.color = 'white'
-			}
-
-function colorcontact() {
-				document.getElementById('home').style.color = 'red'
-				document.getElementById('delivery').style.color = 'white'
-				document.getElementById('location').style.color = 'white'
-				document.getElementById('contact').style.color = 'white'
-			}
-
-
-// responsive
+// responsive nav bar
 			function responsives() {
 				var respo = document.getElementById("mobile-respo")
 				var butt_mobile = document.getElementById("menu_button")

@@ -51,7 +51,7 @@ header > nav > ul a {
 	color: white ;
 	margin-left: 5vw;
 	margin-bottom: 5vh;
-	font-size: 2vw;
+	font-size: 1.5vw;
 	text-transform: uppercase;
 }
 
@@ -163,7 +163,7 @@ footer button a {
 
 footer > p {
 	text-align: center;
-	font-size: 2vw;
+	font-size: 1.5vw;
 }
 
 
@@ -191,7 +191,7 @@ main > h1 {
 	background-color: white;
 	text-transform: uppercase;
 	font-weight: bold;
-	font-size: 3vw;
+	font-size: 2vw;
 	font-family: 'Arimo', sans-serif;
 	margin-right: 3vw;
 	padding: 5% 10% ;
@@ -244,8 +244,9 @@ main > h1 {
 	color: white;
 }
 .what_we_offer > div > div:hover {
-	transform: scale(1.1);
+	transform: scale(1.05);
 	background-color: #e9e9e9;
+	transition: 0.4s
 }
 
 /* delivery page style */
@@ -447,9 +448,12 @@ main > h1 {
 }
 
 .contact_us > div:last-child div img {
-	width: 50%;
-	
-	
+	width: 50%;	
+}
+
+/* hoover button */
+.contact_us button:hover {
+	background-color: #c5c5c5;
 }
 
 
@@ -507,7 +511,9 @@ footer th {
 	border-radius: 2rem
 }
 
-
+.what_we_offer nav > ul a {
+	font-size: 3vw;
+}
 .delivery #delivery_list {
     flex-direction: column;
     width: 95%;
